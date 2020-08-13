@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pintando la Web</title>
+	<!-- se define en la cabezera -->
+	<style>
+
+	</style>
+	<style>
+		p{
+			background: red;
+		}
+	</style>
+	<!-- dentro de la cabezera sirve para cargar una hoja de estilo -->
+	<link rel="stylesheet" href="css/estilos.css">
+	<!-- href es para hacer el enlace -->
+	
+
+
+</head>
+<body>
+	
+	<h1>REVELANCIA DE LOS ESTILOS</h1>
+
+	<h2>REGLA 1:</h2>
+
+	<p>
+		"Si un estilo definido en la <em>cabecera</em> entra en conflicto con un estilo definido de un archivo externo,se aplica los estilos de aquella definición que esté <strong>más cercana a la etiqueta afectada</strong>...."
+	</p>
+
+	<h2>REGLA 2:</h2>
+
+	<p>
+		"Los estilos en linea,al ser aplicado directamente en la etiqueta son los que tendran mayor <strong>RELEVANCIA</strong>"
+	</p>
+
+	<h2>REGLA 3:</h2>
+
+	<p>
+		"La unica excepción a la regla 1 y 2 es el uso de la etiqueta -!important- el cual le indica al navegador que al margen del orden como se han definido los etilos, el elemento que contenga !important sera el que prevalece."
+	</p>
+
+	<h1>CRITERIOS PARA DETERMINAR CUAL ES LA REGLA GANADORA</h1>
+
+	<ul>
+		<li>
+			<h2>CRITERIO 1:</h2>
+			<p>En base a la Importancia, las declaraciones importamtes que van seguidas de una directiva llamada:<span>!importan</span>. Cualquier otra declaracion sin el important son consideradas normales</p>
+		</li>
+		<li>
+			<h2>CRITERIO 2:</h2>
+			<p>En la Especificidad el selector es el que la define (TABLA DE REFERENCIA EN POWERPOINT) para saber el grado de especificidad</p>
+		</li>
+		<li>
+			<h2>CRITERIO 3:</h2>
+			<p>En el Orden el buscador lee las etiquetas de <span>arriba hacia abajo</span>asi que la que va a predominar sera la ultima etiqueta (abajo).</p>
+		</li>
+		<li>
+			<h2><strong>REGLA DE ORO:</strong></h2>
+			<p>"Si 2 o más declaraciones tienen la misma <span>importancia, la especificidad</span> de las reglas decidira cual se debe aplicar...<span>Si las reglas tienen la misma especificidad, el orden</span> en el que fueron escritas,definira el resultado final.</p>
+		</li>
+	</ul>
+	
+</body>
+</html>
